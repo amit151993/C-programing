@@ -5,10 +5,10 @@ int main(void) {
 	char st2[20];
 	int i=0;
 	printf("Enter the name: \n");
-	scanf("%s",st1);
-	while(st1[i]!='\0'){
-		st2[i]=st1[i];
-		++i;
+	scanf("%s",st1); // taking input from the keyboard
+	while(st1[i]!='\0'){  // step by step checking the strings null values
+		st2[i]=st1[i];  // copy the string st1 to st2
+		++i;           
 	}
 	st2[i]='\0';
 	printf("original name: %s\n",st1);
